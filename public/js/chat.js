@@ -86,7 +86,6 @@ $('#message-form').on('submit',function(e){
   //Sending message to server...
   if(messageTextbox.val()!==""){
     socket.emit('createMessage',{
-      from:"Akash",
       text:messageTextbox.val()
     },function(){
       messageTextbox.val("");
